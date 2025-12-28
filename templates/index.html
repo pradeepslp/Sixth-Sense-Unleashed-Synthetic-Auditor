@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberX | Digital Twin Auditor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-dark: #0f172a;
+            --card-glass: rgba(30, 41, 59, 0.7);
+            --border-glass: rgba(255, 255, 255, 0.1);
+            --accent-primary: #3b82f6; /* Bright Blue */
+            --accent-glow: rgba(59, 130, 246, 0.5);
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+            --success: #10b981;
+            --danger: #ef4444;
+        }
+
+        * { box-sizing: border-box; transition: all 0.2s ease; }
+
+        body {
+            background-color: var(--bg-dark);
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(56, 189, 248, 0.15) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(139, 92, 246, 0.15) 0px, transparent 50%);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* --- Main Layout --- */
+        .dashboard-container {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 24px;
+            width: 100%;
+            max-width: 1200px;
+            height: 85vh;
+        }
+
+        /* --- Sidebar --- */
+        .sidebar {
+            background: var(--card-glass);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--border-glass);
+            border-radius: 24px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .brand {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: -1px;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .brand-dot {
+            width: 12px; height: 12px;
+            background-color: var(--accent-primary);
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--accent-primary);
+        }
+
+        .status-panel h3 {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+
+        .status-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .indicator {
+            width: 8px; height: 8px;
+            border-radius: 50%;
+        }
+        .ind-green { background-color: var(--success); box-shadow: 0 0 8px var(--success); }
+        .ind-blue { background-color: var(--accent-primary); box-shadow: 0 0 8px var(--accent-primary); }
+
+        /* --- Main Content Area --- */
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        /* --- Header Card --- */
+        .header-card {
+            background: var(--card-glass);
+            border: 1px solid var(--border-glass);
+            border-radius: 24px;
+            padding: 30px;
+        }
+
+        .header-card h1 { margin: 0; font-size: 1.8rem; font-weight: 600; }
+        .header-card p { color: var(--text-muted); margin-top: 5px; }
+
+        /* --- Action Grid --- */
+        .action-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            flex-grow: 1;
+        }
+
+        .glass-panel {
+            background: var(--card-glass);
+            border: 1px solid var(--border-glass);
+            border-radius: 24px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .panel-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* --- File Upload Styling --- */
+        .drop-zone {
+            flex-grow: 1;
+            border: 2px dashed var(--border-glass);
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            cursor: pointer;
+            background: rgba(15, 23, 42, 0.4);
+            position: relative;
+        }
+
+        .drop-zone:hover {
+            border-color: var(--accent-primary);
+            background: rgba(59, 130, 246, 0.1);
+        }
+
+        .drop-zone-text {
+            color: var(--text-muted);
+            margin-top: 15px;
+            font-size: 0.9rem;
+        }
+        
+        .file-icon { font-size: 2rem; opacity: 0.7; }
+        
+        .file-input {
+            position: absolute;
+            width: 100%; height: 100%;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        #fileNameDisplay {
+            margin-top: 10px;
+            color: var(--accent-primary);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+        }
+
+        /* --- Form Inputs --- */
+        label { 
+            color: var(--text-muted); 
+            font-size: 0.85rem; 
+            margin-bottom: 8px; 
+            display: block; 
+        }
+
+        textarea {
+            width: 100%;
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid var(--border-glass);
+            border-radius: 12px;
+            padding: 15px;
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            resize: none;
+            height: 120px;
+        }
+
+        textarea:focus {
+            outline: none;
+            border-color: var(--accent-primary);
+            box-shadow: 0 0 15px var(--accent-glow);
+        }
+
+        /* --- Cyber Button --- */
+        .cyber-btn {
+            background: linear-gradient(135deg, var(--accent-primary), #60a5fa);
+            border: none;
+            padding: 16px;
+            border-radius: 12px;
+            color: white;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: auto;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 15px var(--accent-glow);
+        }
+
+        .cyber-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px var(--accent-glow);
+        }
+
+        /* --- Result Notification --- */
+        .notification-card {
+            grid-column: 1 / -1;
+            background: rgba(16, 185, 129, 0.1); /* Green tint */
+            border: 1px solid var(--success);
+            padding: 20px;
+            border-radius: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            animation: slideUp 0.5s ease-out;
+        }
+
+        .download-pill {
+            background: var(--success);
+            color: #0f172a;
+            padding: 10px 24px;
+            border-radius: 100px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .download-pill:hover { background: #34d399; }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* --- Footer (Credits) --- */
+        .footer-credits {
+            margin-top: 30px;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="dashboard-container">
+        
+        <aside class="sidebar">
+            <div>
+                <div class="brand">
+                    <div class="brand-dot"></div>
+                    CYBERX<span style="opacity:0.5;">SYNTHETIC-AUDITOR</span>
+                </div>
+                
+                <div class="status-panel">
+                    <h3>System Diagnostics</h3>
+                    <div class="status-item">
+                        <div class="indicator ind-green"></div>
+                        <span>Core Engine: ONLINE</span>
+                    </div>
+                    <div class="status-item">
+                        <div class="indicator ind-blue"></div>
+                        <span>Ollama AI: ACTIVE</span>
+                    </div>
+                    <div class="status-item">
+                        <div class="indicator ind-green"></div>
+                        <span>Network: SECURE (Offline)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-credits">
+                v1.0.4 | Hackathon Build<br>
+                Team Sixth Sense Unleashed
+            </div>
+        </aside>
+
+        <main class="main-content">
+            
+            <div class="header-card">
+                <h1>Synthetic Auditor</h1>
+                <p>AI-Powered Digital Twin Vulnerability Analysis</p>
+            </div>
+
+            <form action="/" method="POST" enctype="multipart/form-data" style="display: contents;">
+                
+                <div class="action-grid">
+                    
+                    <div class="glass-panel">
+                        <div class="panel-title">
+                            <span>01 // Data Ingestion</span>
+                        </div>
+                        
+                        <div class="drop-zone" id="dropArea">
+                            <span class="file-icon">📂</span>
+                            <div class="drop-zone-text">
+                                <strong>Click to Upload Scan</strong><br>
+                                Accepts .XML (Nmap/Nessus)
+                            </div>
+                            <div id="fileNameDisplay"></div>
+                            <input type="file" name="file" id="fileInput" class="file-input" required>
+                        </div>
+                    </div>
+
+                    <div class="glass-panel">
+                        <div class="panel-title">
+                            <span>02 // Context Injection</span>
+                        </div>
+                        
+                        <label for="context">Target Environment Profile</label>
+                        <textarea name="context" id="context" placeholder="Ex: This is a legacy SWIFT gateway for a Tier-1 Bank. The server is internal-only but handles critical PII data."></textarea>
+                        
+                        <button type="submit" class="cyber-btn" id="runBtn">
+                            Initialize Audit Sequence
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            {% if message %}
+            <div class="notification-card">
+                <div>
+                    <strong style="color: var(--success); font-size: 1.1rem;">Analysis Complete</strong>
+                    <div style="color: var(--text-muted); font-size: 0.9rem;">{{ message }}</div>
+                </div>
+                {% if pdf_link %}
+                <a href="/{{ pdf_link }}" class="download-pill" target="_blank">Download Report ⬇</a>
+                {% endif %}
+            </div>
+            {% endif %}
+
+        </main>
+    </div>
+
+    <script>
+        const fileInput = document.getElementById('fileInput');
+        const fileNameDisplay = document.getElementById('fileNameDisplay');
+        const dropArea = document.getElementById('dropArea');
+        const runBtn = document.getElementById('runBtn');
+
+        fileInput.addEventListener('change', (e) => {
+            if (e.target.files.length > 0) {
+                fileNameDisplay.textContent = "Selected: " + e.target.files[0].name;
+                dropArea.style.borderColor = "var(--accent-primary)";
+                dropArea.style.background = "rgba(59, 130, 246, 0.15)";
+            }
+        });
+
+        runBtn.addEventListener('click', () => {
+            if (fileInput.files.length > 0) {
+                runBtn.innerHTML = "Processing Neural Engine <span class='blink'>...</span>";
+                runBtn.style.opacity = "0.8";
+                runBtn.style.cursor = "wait";
+            }
+        });
+        
+        // Simple blink animation for the loading text
+        const style = document.createElement('style');
+        style.innerHTML = `
+            @keyframes blink { 50% { opacity: 0; } }
+            .blink { animation: blink 1s infinite; }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>

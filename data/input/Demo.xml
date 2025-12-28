@@ -1,0 +1,972 @@
+﻿<?xml version="1.0" encoding="utf-8"?><?mso-application progid="Excel.Sheet"?><Workbook xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet" xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:x2="urn:schemas-microsoft-com:office:excel2" xmlns:html="http://www.w3.org/TR/REC-html40" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+ <x:ExcelWorkbook>
+  <x:ActiveSheet>0</x:ActiveSheet>
+ </x:ExcelWorkbook>
+ <o:DocumentProperties>
+  <o:Author>SOVERSSINGH</o:Author>
+  <o:Created>2015-06-05T18:17:20Z</o:Created>
+  <o:LastSaved>2021-10-22T06:13:05Z</o:LastSaved>
+ </o:DocumentProperties>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <ss:Alignment ss:Vertical="Bottom" />
+   <ss:Font ss:Color="#000000" ss:FontName="Calibri" ss:Size="11" />
+  </Style>
+  <Style ss:ID="S21">
+   <ss:Alignment ss:Vertical="Bottom" />
+   <ss:Font ss:Color="#000000" ss:FontName="Calibri" ss:Size="11" />
+   <ss:NumberFormat />
+  </Style>
+  <Style ss:ID="S22">
+   <ss:Alignment ss:Vertical="Bottom" />
+   <ss:Font ss:Color="#000000" ss:FontName="Calibri" ss:Size="11" />
+   <ss:NumberFormat ss:Format="_(&quot;₹&quot;* #,##0_);_(&quot;₹&quot;* \(#,##0\);_(&quot;₹&quot;* &quot;-&quot;??_);_(@_)" />
+  </Style>
+  <Style ss:ID="S23">
+   <ss:Alignment ss:Vertical="Bottom" />
+   <ss:Font ss:Color="#000000" ss:FontName="Calibri" ss:Size="11" />
+   <ss:NumberFormat ss:Format="0%" />
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Sheet1">
+  <ss:Names />
+  <ss:Table ss:DefaultRowHeight="15" ss:DefaultColumnWidth="48" ss:ExpandedRowCount="76" ss:ExpandedColumnCount="5">
+   <Column ss:Index="1" ss:AutoFitWidth="0" ss:Width="38.25" />
+   <Column ss:Index="2" ss:AutoFitWidth="0" ss:Width="64.5" />
+   <Column ss:Index="3" ss:AutoFitWidth="0" ss:Width="81.75" />
+   <Column ss:Index="5" ss:AutoFitWidth="0" ss:Width="46.5" />
+   <Row ss:Index="1">
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Year</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Category</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Product</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Sales</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Rating</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="2">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2017</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Components</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Chains</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">20000</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.75</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="3">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2015</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Clothing</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Socks</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">3700</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.22</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="4">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2017</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Clothing</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Bib-Shorts</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">4000</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.22</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="5">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2015</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Clothing</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Shorts</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">13300</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.56000000000000005</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="6">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2017</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Clothing</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Tights</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">36000</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">1</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="7">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2015</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Components</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Handlebars</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">2300</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.35</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="8">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2016</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Clothing</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Socks</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">2300</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.28000000000000003</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="9">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2016</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Components</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Brakes</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">3400</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.36</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="10">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2016</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Bikes</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Mountain Bikes</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">6300</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.40</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="11">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2017</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Components</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Brakes</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">5400</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.38</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="12">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2016</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Accessories</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Helmets</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">17000</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.90</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="13">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2016</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Accessories</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Lights</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">21600</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.90</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="14">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2016</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Accessories</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Locks</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">29800</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.90</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="15">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2016</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Components</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Bottom Brackets</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">1000</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.23</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="16">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2015</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Clothing</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Jerseys</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">6700</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.05</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="17">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2017</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Components</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Bottom Brackets</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">600</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.27</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="18">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2015</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Bikes</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Road Bikes</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">3500</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.50</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="19">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2017</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Clothing</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Jerseys</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">7500</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.40</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="20">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2017</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Accessories</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Tires and Tubes</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">63700</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.90</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="21">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2017</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Bikes</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Cargo Bike</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">9300</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.60</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="22">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2017</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Bikes</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Mountain Bikes</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">8500</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.46</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="23">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2017</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Accessories</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Bike Racks</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">33700</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.92</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="24">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2017</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Clothing</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Caps</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">600</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.15</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="25">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2015</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Bikes</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Mountain Bikes</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">3100</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.35</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="26">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2017</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Accessories</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Pumps</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">30700</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.95</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="27">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2016</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Accessories</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Pumps</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">16400</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.80</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="28">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2016</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Accessories</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Bike Racks</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">22100</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.90</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="29">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2017</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Accessories</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Helmets</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">34000</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.95</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="30">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2015</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Accessories</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Pumps</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">700</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.10</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="31">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2015</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Clothing</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Tights</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">3300</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.30</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="32">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2017</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Bikes</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Road Bikes</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">16900</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.65</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="33">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2017</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Accessories</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Lights</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">36700</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.90</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="34">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2015</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Accessories</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Helmets</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">8300</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.99</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="35">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2016</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Clothing</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Bib-Shorts</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">2900</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.36</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="36">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2015</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Accessories</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Tires and Tubes</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">8700</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.90</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="37">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2017</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Accessories</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Locks</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">35000</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">1</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="38">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2016</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Bikes</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Road Bikes</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">8300</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.46</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="39">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2016</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Components</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Wheels</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">16700</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.75</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="40">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2016</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Bikes</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Touring Bikes</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">1800</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.15</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="41">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2017</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Clothing</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Socks</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">3700</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.48</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="42">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2016</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Clothing</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Shorts</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">12000</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.66</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="43">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2015</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Accessories</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Locks</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">10000</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.85</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="44">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2015</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Components</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Bottom Brackets</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">500</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.35</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="45">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2017</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Components</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Wheels</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">21800</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.96</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="46">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2016</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Components</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Chains</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">16400</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.70</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="47">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2016</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Clothing</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Caps</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">400</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.20</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="48">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2015</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Clothing</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Vests</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">3300</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.36</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="49">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2017</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Components</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Handlebars</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">5000</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.35</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="50">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2016</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Components</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Handlebars</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">3300</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.38</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="51">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2015</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Components</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Pedals</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">800</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.36</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="52">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2016</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Clothing</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Gloves</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">15600</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.65</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="53">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2016</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Components</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Pedals</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">1500</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.17</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="54">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2017</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Components</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Pedals</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">6200</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.38</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="55">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2017</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Clothing</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Gloves</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">27000</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.88</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="56">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2016</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Components</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Saddles</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">2800</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.38</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="57">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2016</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Bikes</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Cargo Bike</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">6700</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.46</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="58">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2015</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Clothing</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Gloves</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">13300</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.50</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="59">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2016</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Accessories</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Tires and Tubes</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">13800</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.85</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="60">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2017</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Clothing</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Vests</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">2400</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.35</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="61">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2015</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Accessories</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Bike Racks</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">300</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.05</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="62">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2015</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Components</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Saddles</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">2100</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.49</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="63">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2015</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Components</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Brakes</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">2300</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.34</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="64">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2015</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Components</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Wheels</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">10000</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.66</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="65">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2015</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Bikes</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Touring Bikes</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">500</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.22</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="66">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2016</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Clothing</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Jerseys</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">3800</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.48</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="67">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2015</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Bikes</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Cargo Bike</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">3200</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.48</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="68">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2017</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Clothing</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Shorts</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">23000</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">1</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="69">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2015</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Clothing</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Bib-Shorts</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">700</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.28000000000000003</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="70">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2015</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Accessories</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Lights</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">1300</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.90</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="71">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2016</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Clothing</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Vests</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">1300</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.25</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="72">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2016</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Clothing</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Tights</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">22100</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.99</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="73">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2017</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Components</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Saddles</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">3100</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.42</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="74">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2015</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Clothing</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Caps</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">500</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.50</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="75">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2017</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Bikes</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Touring Bikes</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">3100</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.22</Data>
+    </Cell>
+   </Row>
+   <Row ss:Index="76">
+    <Cell ss:StyleID="S21"><Data ss:Type="Number">2015</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Components</Data>
+    </Cell>
+    <Cell ss:StyleID="S21"><Data ss:Type="String">Chains</Data>
+    </Cell>
+    <Cell ss:StyleID="S22"><Data ss:Type="Number">8700</Data>
+    </Cell>
+    <Cell ss:StyleID="S23"><Data ss:Type="Number">0.92</Data>
+    </Cell>
+   </Row>
+  </ss:Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3" />
+    <Footer x:Margin="0.3" />
+    <PageMargins x:Top="0.75" x:Bottom="0.75" x:Left="0.7" x:Right="0.7" />
+   </PageSetup>
+   <Print>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>10</ActiveRow>
+     <ActiveCol>8</ActiveCol>
+     <RangeSelection>R11C9</RangeSelection>
+    </Pane>
+   </Panes>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

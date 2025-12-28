@@ -1,0 +1,186 @@
+:root {
+    --bg-color: #3a3a3a;           /* Soft Light Grey */
+    --card-bg: #ffffff;            /* Pure White */
+    --text-primary: #4a5059;       /* Dark Grey for readability */
+    --text-secondary: #717882;     /* Soft Grey for descriptions */
+    --accent-color: #4facfe;       /* Soft Blue Gradient Start */
+    --accent-hover: #00f2fe;       /* Soft Cyan Gradient End */
+    --danger-color: #ff6b6b;       /* Soft Red */
+    --success-color: #51cf66;      /* Soft Green */
+    --shadow-soft: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    padding: 3rem 1.5rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+h1 {
+    font-size: 2.8rem;
+    margin: 0;
+    color: #1a202c;
+    letter-spacing: -1px;
+}
+
+.highlight {
+    background: -webkit-linear-gradient(45deg, var(--accent-color), var(--accent-hover));
+    -webkit-background-clip: text;
+    background-clip: text; /* standard property for compatibility */
+    -webkit-text-fill-color: transparent;
+    color: transparent; /* standard fallback */
+}
+
+p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Soft Card Design */
+.card {
+    background-color: var(--card-bg);
+    border-radius: 20px;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow-soft);
+    border: none; /* Removed harsh borders */
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+h2 {
+    color: var(--text-primary);
+    font-weight: 600;
+    border-bottom: 2px solid #edf2f7;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+/* Inputs & Forms */
+textarea {
+    width: 100%;
+    background-color: #f7fafc;
+    border: 2px solid #edf2f7;
+    color: var(--text-primary);
+    font-family: inherit;
+    padding: 15px;
+    border-radius: 12px;
+    resize: vertical;
+    box-sizing: border-box; 
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    background-color: #fff;
+}
+
+/* Modern Gradient Button */
+.cta-btn {
+    width: 100%;
+    background-image: linear-gradient(135deg, var(--accent-color) 0%, #00c6fb 100%);
+    color: white;
+    border: none;
+    padding: 18px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(79, 172, 254, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 14px rgba(79, 172, 254, 0.4);
+}
+
+/* File Upload Area */
+.file-drop-area {
+    border: 2px dashed #cbd5e0;
+    background-color: #f7fafc;
+    border-radius: 12px;
+    padding: 40px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.file-drop-area:hover {
+    background-color: #ebf8ff;
+    border-color: var(--accent-color);
+}
+
+.fake-btn {
+    background-color: white;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    padding: 8px 15px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-right: 10px;
+}
+
+.file-msg {
+    color: var(--text-secondary);
+}
+
+/* Result Card */
+.result-card {
+    background-color: #f0fff4; /* Light Green background */
+    border-left: 5px solid var(--success-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: var(--shadow-soft);
+}
+
+.download-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 30px;
+    background-color: var(--text-primary);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #000;
+}
+
+/* Footer Status */
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #a0aec0;
+}
+
+.status-ok { color: var(--success-color); font-weight: bold; }
+.status-offline { color: var(--text-secondary); font-weight: bold; }
